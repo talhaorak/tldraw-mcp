@@ -214,6 +214,17 @@ bun run build
 bun test
 ```
 
+## Publishing
+
+```bash
+./scripts/publish.sh          # Auto-increment patch (0.1.0 → 0.1.1)
+./scripts/publish.sh 0.2.0    # Use specific version
+./scripts/publish.sh minor    # Bump minor (0.1.1 → 0.2.0)
+./scripts/publish.sh major    # Bump major (0.2.0 → 1.0.0)
+```
+
+The script updates `package.json`, commits, tags, and pushes. GitHub Actions handles npm publish automatically via Trusted Publishers.
+
 ## Security
 
 - **Path traversal prevention** — Relative paths can't escape `TLDRAW_DIR`
