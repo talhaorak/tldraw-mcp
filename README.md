@@ -71,7 +71,7 @@ mcp:
 Or install as a skill:
 
 ```bash
-npx @talhaorak/tldraw-mcp install-skill
+curl -fsS https://raw.githubusercontent.com/talhaorak/tldraw-mcp/main/SKILLS.md | bash
 ```
 
 ### Environment Variables
